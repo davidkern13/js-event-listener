@@ -2,7 +2,7 @@
 
 This package suitable for react, react-native or javascript projects. The source written in javascript without any dependencies.
 
-[![Only 2.5 Kb](https://badgen.net/badge/size/2.5kb/green?icon=npm)
+![Only 2.5 Kb](https://badgen.net/badge/size/2.5kb/green?icon=npm)
 
 # Why
 
