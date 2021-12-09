@@ -16,9 +16,9 @@ npm install --save js-event-listener
 
 # Usage Example
 
-The event listener also work across different files in react, react-native, javascript apps. All you have to do is import the appropriate function into any file you need and receive or send event. [Check Live Example](https://codesandbox.io/s/js-event-listener-xs0lh?file=/src/App.js)
+The event listener also work across different files in ```react```, ```react-native``` or ```javascript``` apps. All you have to do is import the appropriate function into any file you need and receive or send event. [Check Live Example](https://codesandbox.io/s/js-event-listener-xs0lh?file=/src/App.js)
 
-```
+```JavaScript
 import React,{ useEffect } from 'react'; 
 import { addEventListener, emitEvent, removeEventListener } from 'js-event-listener';
 
@@ -44,14 +44,30 @@ export default function App() {
 ```
 
 
-# API
+# API Details
 
-| Function  | Args | Return | Default | Description |
-| ------------- | ------------- | ------------- | ------------- | ------------- |
-| addEventListener  | id  |   |  | |
-| emitEvent  |   |   |  | |
-| removeEventListener  |  | bool  |   | |
-| removeAllEventListener  |   |  bool |   | |
+### Create event.
+```JavaScript
+addEventListener(eventName, callback);
+``` 
+### Emit event.
+```JavaScript
+emitEvent(eventType, data);
+```
+### Remove spesific event by eventType or id.
+```JavaScript
+removeEventListener(eventType);
+```
+### Remove all events.
+```JavaScript
+removeAllEventListener();
+```
+### Params.
 
+| Param  | Type | Description |
+| ------------- | ------------- | ------------- | 
+| eventName | ```String``` | A case-sensitive string or integer number representing the event type to listen for. | 
+| eventType | ```String``` or ```Number``` | A case-sensitive string or integer number representing the event type to be removed. | 
+| callback | ```Function``` | The funtion what recieve a notification when an event of the specified type occurs. | 
 
 
