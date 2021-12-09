@@ -48,7 +48,7 @@ export default function App() {
 
 ### Create event.
 ```JavaScript
-addEventListener(eventType, callback);
+addEventListener(eventName, callback);
 ``` 
 ### Emit event.
 ```JavaScript
@@ -66,7 +66,8 @@ removeAllEventListener();
 
 | Param  | Type | Description |
 | ------------- | ------------- | ------------- | 
-| eventType | ```String``` or ```Number``` | A case-sensitive string or integer number representing the event type to listen for. | 
+| eventName | ```String``` | A case-sensitive string or integer number representing the event type to listen for. | 
+| eventType | ```String``` or ```Number``` | A case-sensitive string or integer number representing the event type to be removed. | 
 | callback | ```Function``` | The funtion what recieve a notification when an event of the specified type occurs. | 
 
 
