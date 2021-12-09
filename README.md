@@ -16,7 +16,7 @@ npm install --save js-event-listener
 
 # Usage Example
 
-The event listener also work across different files in react, react-native, javascript apps. All you have to do is import the appropriate function into any file you need and receive or send event. [Check Live Example](https://codesandbox.io/s/js-event-listener-xs0lh?file=/src/App.js)
+The event listener also work across different files in ```react```, ```react-native``` or ```javascript``` apps. All you have to do is import the appropriate function into any file you need and receive or send event. [Check Live Example](https://codesandbox.io/s/js-event-listener-xs0lh?file=/src/App.js)
 
 ```JavaScript
 import React,{ useEffect } from 'react'; 
@@ -44,14 +44,16 @@ export default function App() {
 ```
 
 
-# API
+# API Details
 
-| Function  | Args | Return | Default | Description |
-| ------------- | ------------- | ------------- | ------------- | ------------- |
-| addEventListener  | id  |   |  | |
-| emitEvent  |   |   |  | |
-| removeEventListener  |  | bool  |   | |
-| removeAllEventListener  |   |  bool |   | |
+.addEventListener(eventType, callback);
+.emitEvent(eventType, data);
+.removeEventListener(eventType);
+.removeAllEventListener();
 
+| Param  | Type | Description |
+| ------------- | ------------- | ------------- | 
+| eventType | ```String``` or ```Number``` | A case-sensitive string or integer number representing the event type to listen for. | 
+| callback | ```Function``` | The funtion what recieve a notification when an event of the specified type occurs. | 
 
 
