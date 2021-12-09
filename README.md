@@ -46,10 +46,10 @@ export default function App() {
 
 # API Details
 
-.addEventListener(eventType, callback);
-.emitEvent(eventType, data);
-.removeEventListener(eventType);
-.removeAllEventListener();
+```.addEventListener(eventType, callback);```
+```.emitEvent(eventType, data);```
+```.removeEventListener(eventType);```
+```.removeAllEventListener();```
 
 | Param  | Type | Description |
 | ------------- | ------------- | ------------- | 
