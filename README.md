@@ -2,9 +2,7 @@
 
 This package suitable for react, react-native or javascript projects. The source written in javascript without any dependencies.
 
-![Only 2.5 Kb](https://badgen.net/badge/size/2.5kb/green?icon=npm) [(https://badgen.net/badge/size/2.5kb/green?icon=npm)](https://codesandbox.io/s/js-event-listener-xs0lh?file=/src/App.js)
-
-
+![Only 2.5 Kb](https://badgen.net/badge/size/2.5kb/green?icon=npm) 
 
 # Why
 
@@ -18,7 +16,7 @@ npm install --save js-event-listener
 
 # Usage Example
 
-The event listener also work across different files in react, react-native, javascript apps. All you have to do is import the appropriate function into any file you need and receive or send event.
+The event listener also work across different files in react, react-native, javascript apps. All you have to do is import the appropriate function into any file you need and receive or send event. [Check Live Example](https://codesandbox.io/s/js-event-listener-xs0lh?file=/src/App.js)
 
 ```
 import React,{ useEffect } from 'react'; 
@@ -48,9 +46,12 @@ export default function App() {
 
 # API
 
-| function | params | return value | Default | Description | 
-| addEventListener | params | id |  | Description | 
-| emitEvent | params |  |  | Description | 
-| removeEventListener | params | id |  | Description | 
-| removeAllEventListener | params | id |  | Description | 
+| Function  | Args | Return | Default | Description |
+| ------------- | ------------- | ------------- | ------------- | ------------- |
+| addEventListener  | id  |   |  | |
+| emitEvent  |   |   |  | |
+| removeEventListener  |  | bool  |   | |
+| removeAllEventListener  |   |  bool |   | |
+
+
 
