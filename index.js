@@ -1,8 +1,16 @@
+/**
+* Class-based object what represent id and events values
+*/
 class ReactNativeEventRegister {
     static id = 0;
     static events = Object.create(null);
 }
 
+/**
+* Function add event to event object
+* @param    {String} Name of the event
+* @return   {Int} Id of created event 
+*/
 function addEventListener(name, handler){
     ReactNativeEventRegister.id++;
     let _id = ReactNativeEventRegister.id;
@@ -23,6 +31,11 @@ function addEventListener(name, handler){
     return _id;
 }
 
+/**
+* Function remove from event object by id
+* @param    {Id} Id of event to be removed
+* @return   {Boolean} 
+*/
 function removeEventListener(id){
     let _events = ReactNativeEventRegister.events;
     if(checkId(id)){
@@ -30,7 +43,10 @@ function removeEventListener(id){
     }
     return false;
 }
-
+/**
+* Function remove all events
+* @return   {Boolean} 
+*/
 function removeAllEventListener(){
     let _id = ReactNativeEventRegister.id = 0;
     let _events = ReactNativeEventRegister.events.length = 0;
@@ -38,6 +54,11 @@ function removeAllEventListener(){
     return !_id && !_events ? true : false;
 }
 
+/**
+* Function remove from event object by id
+* @param    {Id,String} Id or String to remove from event object
+* @return   {Boolean} 
+*/
 function emitEvent(identity, data){
     let _events = ReactNativeEventRegister.events;
 
@@ -58,6 +79,7 @@ const emitByEventName = (name, _events, data) => {
         }
     });
 }
+
 const emitByEventId = (id, _events, data) => {
     _events[id].handler(data);
 }
