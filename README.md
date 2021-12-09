@@ -47,13 +47,21 @@ export default function App() {
 # API Details
 
 ### Create event.
-```JavaScript.addEventListener(eventType, callback);``` 
+```JavaScript
+addEventListener(eventType, callback);
+``` 
 ### Emit event.
-```JavaScript.emitEvent(eventType, data);```
+```JavaScript
+emitEvent(eventType, data);
+```
 ### Remove spesific event by eventType or id.
-```JavaScript.removeEventListener(eventType);```
+```JavaScript
+removeEventListener(eventType);
+```
 ### Remove all events.
-```JavaScript.removeAllEventListener();```
+```JavaScript
+removeAllEventListener();
+```
 
 | Param  | Type | Description |
 | ------------- | ------------- | ------------- | 
