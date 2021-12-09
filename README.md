@@ -18,7 +18,7 @@ npm install --save js-event-listener
 
 The event listener also work across different files in react, react-native, javascript apps. All you have to do is import the appropriate function into any file you need and receive or send event. [Check Live Example](https://codesandbox.io/s/js-event-listener-xs0lh?file=/src/App.js)
 
-```ruby
+```JavaScript
 import React,{ useEffect } from 'react'; 
 import { addEventListener, emitEvent, removeEventListener } from 'js-event-listener';
 
