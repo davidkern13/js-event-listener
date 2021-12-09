@@ -1,0 +1,26 @@
+{
+  "name": "js-event-listener",
+  "version": "1.0.0",
+  "description": "Javascript event listener",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/davidkern13/js-event-listener.git"
+  },
+  "keywords": [
+    "javascript",
+    "react",
+    "react-native",
+    "event",
+    "listener"
+  ],
+  "author": "David Kern",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/davidkern13/js-event-listener/issues"
+  },
+  "homepage": "https://github.com/davidkern13/js-event-listener#readme"
+}
