@@ -1,11 +1,12 @@
 ![](https://i.ibb.co/p48WrSR/JS-EVENT-LISTENER.png)
 
-[![Only 2.5 Kb]https://badgen.net/badge/size/2.5kb/green?icon=npm
+This package suitable for react, react-native or javascript projects. The source written in javascript without any dependencies.
 
+[![Only 2.5 Kb](https://badgen.net/badge/size/2.5kb/green?icon=npm)
 
 # Why
 
-In some situations it can be very helpful to have event listener. Instead of using global events, prop drilling, invoke redux render can be bypassed with event listener. to make communication between independent components its also very helpful.
+Certain situations can make our development as difficult like updates the redux state by returning a new state every time which can cause excessive use of memory, pass down in component three the event as a prop or communication between independent components for example can be bypassed with event listener.
 
 # Instalation
 
@@ -14,3 +15,40 @@ npm install --save js-event-listener
 ```
 
 # Usage Example
+
+The event listener also work across different files in react, react-native, javascript apps. All you have to do is import the appropriate function into any file you need and receive or send event.
+
+```
+import React,{ useEffect } from 'react'; 
+import { addEventListener, emitEvent, removeEventListener } from 'js-event-listener';
+
+export default function App() {
+
+  useEffect( () => {
+    let id = addEventListener("customEvent", (e) => {
+      console.log(e);
+    });
+    return () => {
+      removeEventListener(id);
+    }
+  },[]);
+
+  let clickEventHandler = () => emitEvent("customEvent", "my first event!");
+
+  return (
+    <div className="App">
+      <button onClick={clickEventHandler}>Event submit</button>
+    </div>
+  );
+}
+```
+
+
+# API
+
+| function | params | return value | Default | Description | 
+| addEventListener | params | id |  | Description | 
+| emitEvent | params |  |  | Description | 
+| removeEventListener | params | id |  | Description | 
+| removeAllEventListener | params | id |  | Description | 
+
