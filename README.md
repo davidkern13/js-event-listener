@@ -1,3 +1,3 @@
 # Js Event Listeners
 
-![](https://i.ibb.co/Z8j1Jb8/Purple-Gradients-Software-Developer-Business-Card.png)
+![](https://i.ibb.co/p48WrSR/JS-EVENT-LISTENER.png)
