@@ -2,7 +2,9 @@
 
 This package suitable for react, react-native or javascript projects. The source written in javascript without any dependencies.
 
-![Only 2.5 Kb](https://badgen.net/badge/size/2.5kb/green?icon=npm)
+![Only 2.5 Kb](https://badgen.net/badge/size/2.5kb/green?icon=npm) ![https://badgen.net/badge/example/url/purple](https://codesandbox.io/s/js-event-listener-xs0lh?file=/src/App.js)
+
+
 
 # Why
 
