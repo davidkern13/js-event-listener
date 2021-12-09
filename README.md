@@ -1,8 +1,6 @@
 ![](https://i.ibb.co/p48WrSR/JS-EVENT-LISTENER.png)
 
-[![made-with-javascript](https://img.shields.io/badge/Made%20with-JavaScript-1f425f.svg)](https://github.com/davidkern13/js-event-listener/blob/main/index.js)
-[![Npm package daily downloads](https://www.npmjs.com/package/js-event-listener)](https://www.npmjs.com/package/js-event-listener)
-[![Only 2.5 Kb](https://badge-size.herokuapp.com/Naereen/StrapDown.js/master/strapdown.min.js)](https://www.npmjs.com/package/js-event-listener)
+[![Only 2.5 Kb]https://badgen.net/badge/size/2.5kb/green?icon=npm
 
 
 # Why
