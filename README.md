@@ -62,6 +62,7 @@ removeEventListener(eventType);
 ```JavaScript
 removeAllEventListener();
 ```
+### Params.
 
 | Param  | Type | Description |
 | ------------- | ------------- | ------------- | 
