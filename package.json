@@ -4,7 +4,7 @@
   "description": "Javascript event listener",
   "main": "index.js",
   "scripts": {
-    "test": "test"
+    "test": "jest"
   },
   "repository": {
     "type": "git",
@@ -22,5 +22,10 @@
   "bugs": {
     "url": "https://github.com/davidkern13/js-event-listener/issues"
   },
-  "homepage": "https://github.com/davidkern13/js-event-listener#readme"
+  "homepage": "https://github.com/davidkern13/js-event-listener#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "@babel/preset-env": "^7.16.4",
+    "jest": "^27.4.4"
+  }
 }
