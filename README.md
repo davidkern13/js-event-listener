@@ -1,8 +1,8 @@
 ![](https://i.ibb.co/p48WrSR/JS-EVENT-LISTENER.png)
 
-This package suitable for react, react-native or javascript projects. The source written in javascript without any dependencies.
+This package suitable for ```react```, ```react-native``` or ```javascript``` projects. The source written in javascript without any dependencies.
 
-![Only 2.5 Kb](https://badgen.net/badge/size/2.5kb/green?icon=npm) 
+![](https://img.shields.io/github/languages/top/davidkern13/js-event-listener?color=yellow&style=flat-square) ![](https://img.shields.io/github/languages/code-size/davidkern13/js-event-listener?color=green&style=flat-square) ![](https://img.shields.io/badge/Dependencies-0-blueviolet?style=flat-square) 
 
 # Why
 
