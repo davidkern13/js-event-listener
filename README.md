@@ -2,7 +2,7 @@
 
 This package suitable for ```react```, ```react-native``` or ```javascript``` projects. The source written in javascript without any dependencies.
 
-![](https://img.shields.io/github/languages/top/davidkern13/js-event-listener?color=yellow&style=flat-square) ![](https://img.shields.io/github/languages/code-size/davidkern13/js-event-listener?color=green&style=flat-square) 
+![](https://img.shields.io/github/languages/top/davidkern13/js-event-listener?color=yellow&style=flat-square) ![](https://img.shields.io/github/languages/code-size/davidkern13/js-event-listener?color=green&style=flat-square) ![](https://img.shields.io/badge/Dependencies-0-blueviolet) 
 
 # Why
 
