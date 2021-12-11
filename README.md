@@ -86,8 +86,8 @@ rmAll();
 
 ### Params.
 
-| Param  | Type | Return | Description |
-| ------------- | ------------- | ------------- | ------------- | 
+| Param | Type | Description |
+| ------------- | ------------- | ------------- | 
 | eventName | ```String``` | A case-sensitive string representing the event type to listen for. | 
 | eventType | ```String``` or ```Number``` | A case-sensitive string or integer number representing the event to be removed. | 
 | callback | ```Function``` | The funtion what recieve a notification when an event of the specified type occurs. | 
