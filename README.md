@@ -46,6 +46,8 @@ export default function App() {
 
 # API Details
 
+### Functions
+
 Create event.
 ```JavaScript
 addEventListener(eventName, callback);
@@ -63,7 +65,7 @@ Remove all events.
 removeAllEventListener();
 ```
 
-#### Short
+### Short
 
 Create event.
 ```JavaScript
