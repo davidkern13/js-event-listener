@@ -46,43 +46,25 @@ export default function App() {
 
 # API Details
 
-### Functions
 
-Create event.
 ```JavaScript
-addEventListener(eventName, callback);
-``` 
-Emit event.
-```JavaScript
-emitEvent(eventType, data);
-```
-Remove spesific event by eventType or id.
-```JavaScript
-removeEventListener(eventType);
-```
-Remove all events.
-```JavaScript
-removeAllEventListener();
-```
+// Functions
 
-### Short
+addEventListener(eventName, callback); // create event.
+emitEvent(eventType, data); // emit event.
+removeEventListener(eventType); // remove spesific event by eventType or id.
+removeAllEventListener(); // remove all events.
+``` 
 
-Create event.
 ```JavaScript
-on(eventName, callback);
+// Short version
+
+on(eventName, callback); // create event.
+emit(eventType, data); // emit event.
+rm(eventType); // remove spesific event by eventType or id.
+rmAll(); // remove all events.
 ``` 
-Emit event.
-```JavaScript
-emit(eventType, data);
-``` 
-Remove spesific event by eventType or id.
-```JavaScript
-rm(eventType);
-``` 
-Remove all events.
-```JavaScript
-rmAll();
-``` 
+
 
 ### Params.
 
