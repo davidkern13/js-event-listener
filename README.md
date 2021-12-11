@@ -2,7 +2,7 @@
 
 This package suitable for ```react```, ```react-native``` or ```javascript``` projects. The source written in javascript without any dependencies.
 
-![](https://img.shields.io/github/languages/top/davidkern13/js-event-listener?color=yellow&style=flat-square) ![](https://img.shields.io/github/languages/code-size/davidkern13/js-event-listener?color=green&style=flat-square) ![](https://img.shields.io/badge/Dependencies-0-blueviolet?style=flat-square) 
+![](https://img.shields.io/npm/dw/js-event-listener?style=flat-square) ![](https://img.shields.io/github/languages/top/davidkern13/js-event-listener?color=yellow&style=flat-square) ![](https://img.shields.io/github/languages/code-size/davidkern13/js-event-listener?color=green&style=flat-square) ![](https://img.shields.io/badge/test-passing-brightgreen?style=flat-square) ![](https://img.shields.io/badge/Dependencies-0-blueviolet?style=flat-square)  
 
 # Why
 
@@ -66,8 +66,8 @@ removeAllEventListener();
 
 | Param  | Type | Description |
 | ------------- | ------------- | ------------- | 
-| eventName | ```String``` | A case-sensitive string or integer number representing the event type to listen for. | 
-| eventType | ```String``` or ```Number``` | A case-sensitive string or integer number representing the event type to be removed. | 
+| eventName | ```String``` | A case-sensitive string representing the event type to listen for. | 
+| eventType | ```String``` or ```Number``` | A case-sensitive string or integer number representing the event to be removed. | 
 | callback | ```Function``` | The funtion what recieve a notification when an event of the specified type occurs. | 
 
 

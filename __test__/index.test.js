@@ -1,6 +1,7 @@
 import { addEventListener, removeEventListener, removeAllEventListener, emitEvent} from '../index';
 
 describe('Js event listener tests', () => {
+    
     const _addEventListener = (name = 'test', func = () => {}) => {
         return addEventListener(name, func);
     }
@@ -45,7 +46,6 @@ describe('Js event listener tests', () => {
         let removedEvents = removeAllEventListener();
         expect(removedEvents).toBe(true);
     });
-
 
 });
 
