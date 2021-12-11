@@ -46,28 +46,55 @@ export default function App() {
 
 # API Details
 
-### Create event.
+Create event.
 ```JavaScript
 addEventListener(eventName, callback);
 ``` 
-### Emit event.
+Emit event.
 ```JavaScript
 emitEvent(eventType, data);
 ```
-### Remove spesific event by eventType or id.
+Remove spesific event by eventType or id.
 ```JavaScript
 removeEventListener(eventType);
 ```
-### Remove all events.
+Remove all events.
 ```JavaScript
 removeAllEventListener();
 ```
+
+#### Short
+
+Create event.
+```JavaScript
+on(eventName, callback);
+``` 
+Emit event.
+```JavaScript
+emit(eventType, data);
+``` 
+Remove spesific event by eventType or id.
+```JavaScript
+rm(eventType);
+``` 
+Remove all events.
+```JavaScript
+rmAll();
+``` 
+
 ### Params.
 
-| Param  | Type | Description |
-| ------------- | ------------- | ------------- | 
+| Param  | Type | Return | Description |
+| ------------- | ------------- | ------------- | ------------- | 
 | eventName | ```String``` | A case-sensitive string representing the event type to listen for. | 
 | eventType | ```String``` or ```Number``` | A case-sensitive string or integer number representing the event to be removed. | 
 | callback | ```Function``` | The funtion what recieve a notification when an event of the specified type occurs. | 
 
+### Functions.
 
+| Function | Param | Return | Description |
+| ------------- | ------------- | ------------- | ------------- | 
+| addEventListener | ```String``` & ```Function``` | Id | Create event. | 
+| emitEvent | ```String``` or ```Number``` | Nothing | Fire the event. | 
+| removeEventListener | ```String``` or ```Number``` | Remove spesific event by name or id. | 
+| removeAllEventListener | ```String``` or ```Number``` | Remove all events. | 
