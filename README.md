@@ -96,7 +96,7 @@ rmAll();
 
 | Function | Param | Return | Description |
 | ------------- | ------------- | ------------- | ------------- | 
-| addEventListener | ```String``` & ```Function``` | Id | Create event. | 
-| emitEvent | ```String``` or ```Number``` | Nothing | Fire the event. | 
-| removeEventListener | ```String``` or ```Number``` | Remove spesific event by name or id. | 
-| removeAllEventListener | ```String``` or ```Number``` | Remove all events. | 
+| addEventListener | ```String``` AND ```Function``` | Id | Create event. | 
+| emitEvent | ```String``` OR ```Number``` | Nothing | Fire the event. | 
+| removeEventListener | ```String``` OR ```Number``` | Remove spesific event by name or id. | 
+| removeAllEventListener | Nothing | Nothing | Remove all events. | 
