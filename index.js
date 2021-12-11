@@ -1,18 +1,16 @@
 /**
 * Class-based object what represent id and events values
 */
-
  class ReactNativeEventRegister {
      static id = 0;
      static events = Object.create(null);
  }
- 
  /**
  * Function add event to event object
  * @param    {String} Name of the event
  * @return   {Int} Id of created event 
  */
- function addEventListener(name, handler){
+ const addEventListener = (name, handler) =>{
      ReactNativeEventRegister.id++;
      let _id = ReactNativeEventRegister.id;
      let _events = ReactNativeEventRegister.events;
@@ -20,11 +18,7 @@
      let isValidhandler = checkHandler(handler);
      
      if(isValidName && isValidhandler){
-         let data = {
-             name,
-             handler
-         };
-         _events[_id] = data;
+         _events[_id] = { name, handler };
      }else{
          return false;
      } 
@@ -37,14 +31,13 @@
  * @param    {Identity} should be id or event name event to be removed
  * @return   {Boolean} 
  */
- function removeEventListener(identity){
-     let _events = ReactNativeEventRegister.events;
+ const removeEventListener = (identity) => {
      if(checkId(identity)){
-         return deleteEventById(identity, _events);
+         return deleteEventById(identity);
      }
      if(checkName(identity)){
-         let id = findEventByName(identity, _events);
-         if(id) return deleteEventById(identity, _events);
+         let id = findEventByName(identity);
+         if(id) return deleteEventById(identity);
      }
      return false;
  }
@@ -52,7 +45,7 @@
  * Function remove all events
  * @return   {Boolean} 
  */
- function removeAllEventListener(){
+ const removeAllEventListener = () => {
      let _id = ReactNativeEventRegister.id = 0;
      let _events = ReactNativeEventRegister.events.length = 0;
  
@@ -64,36 +57,53 @@
  * @param    {Id,String} Id or String to remove from event object
  * @return   {Boolean} 
  */
- function emitEvent(identity, data){
-     let _events = ReactNativeEventRegister.events;
- 
+ const emitEvent = (identity, data) => {
      if (!data || !data.length) data = [];
- 
      if(checkName(identity)){
-         let id = findEventByName(identity, _events);
-         if(id)_events[id].handler(data);
+         let id = findEventByName(identity);
+         if(id) emitByEventId(id, data);
      }
      if(checkId(identity)){
-         emitByEventId(identity, _events, data);
+         emitByEventId(identity, data);
      }
  }
+
+/**
+*  SHORT    
+*/
+
+const on = (name, handler) => {
+    return addEventListener(name, handler);
+}
+const rm = (identity) => {
+    return removeEventListener(identity);
+}
+const rmAll = () => {
+    return removeAllEventListener();
+}
+const emit = (identity, data) => {
+    emitEvent(identity, data);
+}
  
  /**
  * UTILS FUNCTIONS
  */
  
- const emitByEventId = (id, _events, data) => {
+ const emitByEventId = (id, data) => {
+    let _events = ReactNativeEventRegister.events;
      _events[id].handler(data);
  }
  
- const findEventByName = (_name, _events) => {
+ const findEventByName = (_name) => {
+    let _events = ReactNativeEventRegister.events;
      for(let [id, name] of Object.entries(_events)){
-         if(_events[id] && name === name) return id;
+         if(_events[id] && name?.name === _name) return id;
      }
      return false;
  }
  
- const deleteEventById = (id, _events) => {
+ const deleteEventById = (id) => {
+    let _events = ReactNativeEventRegister.events;
      return delete _events[id];
  }
  
@@ -113,5 +123,9 @@
      addEventListener,
      removeEventListener,
      removeAllEventListener,
-     emitEvent
+     emitEvent,
+     on,
+     rm,
+     rmAll,
+     emit
  }
