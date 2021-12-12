@@ -2,7 +2,7 @@
 
 This package suitable for ```react```, ```react-native``` or ```javascript``` projects. The source written in javascript without any dependencies.
 
-[![Known Vulnerabilities](https://snyk.io/test/npm/js-event-listener/1.0.8/badge.svg?style=flat-square)](https://snyk.io/test/npm/js-event-listener/1.0.8) ![](https://img.shields.io/npm/dy/js-event-listener?style=flat-square) ![](https://img.shields.io/github/languages/top/davidkern13/js-event-listener?color=yellow&style=flat-square) ![](https://img.shields.io/github/languages/code-size/davidkern13/js-event-listener?color=green&style=flat-square) ![](https://img.shields.io/badge/test-passing-brightgreen?style=flat-square) ![](https://img.shields.io/badge/Dependencies-0-blueviolet?style=flat-square)  
+[![Known Vulnerabilities](https://snyk.io/test/npm/js-event-listener/1.0.8/badge.svg?style=flat-square)](https://snyk.io/test/npm/js-event-listener/1.0.8) ![](https://img.shields.io/npm/dw/js-event-listener?style=flat-square) ![](https://img.shields.io/github/languages/top/davidkern13/js-event-listener?color=yellow&style=flat-square) ![](https://img.shields.io/github/languages/code-size/davidkern13/js-event-listener?color=green&style=flat-square) ![](https://img.shields.io/badge/test-passing-brightgreen?style=flat-square) ![](https://img.shields.io/badge/Dependencies-0-blueviolet?style=flat-square)  
 
 # Why
 
