@@ -50,6 +50,8 @@ export default function App() {
 ```JavaScript
 // Functions
 
+import { addEventListener, emitEvent, removeEventListener, removeAllEventListener } from 'js-event-listener';
+
 addEventListener(eventName, callback); // create event.
 emitEvent(eventType, data); // emit event.
 removeEventListener(eventType); // remove spesific event by eventType or id.
@@ -58,6 +60,8 @@ removeAllEventListener(); // remove all events.
 
 ```JavaScript
 // Short version
+
+import { on, emit, rm, rmAll } from 'js-event-listener';
 
 on(eventName, callback); // create event.
 emit(eventType, data); // emit event.
