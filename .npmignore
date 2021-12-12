@@ -1,0 +1,18 @@
+# Node.js #
+###########
+.npmignore
+/node_modules/
+
+# Git #
+#######
+.git*
+
+# Jest #
+#######
+/__test__/
+
+# File #
+#######
+package.json
+package-lock.json   
+babel.config.js
