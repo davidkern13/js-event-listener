@@ -38,7 +38,6 @@ const removeAllEventListener = () => {
 }
 
 const emitEvent = (identity, data) => {
-    if (!data || !data.length) data = [];
     if (checkName(identity)) {
         let id = findEventByName(identity);
         if (id) emitByEventId(id, data);
